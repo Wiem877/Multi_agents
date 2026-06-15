@@ -1,0 +1,8 @@
+pyautogen==0.2.35
+openai>=1.0.0
+python-dotenv
+pandas
+matplotlib
+numpy
+scipy
+seaborn
