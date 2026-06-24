@@ -15,7 +15,7 @@ Termine toujours par 'Plan terminé.'""",
 user = autogen.UserProxyAgent(
     name="User",
     human_input_mode="NEVER",
-    max_consecutive_auto_reply=1,
+    max_consecutive_auto_reply=1, # répond une seule fois puis s'arrête
     code_execution_config=False
 )
 

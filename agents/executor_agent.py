@@ -15,14 +15,8 @@ Règles strictes :
 2. Chaque script doit être complet et exécutable.
 3. Tu utilises uniquement ces bibliothèques : pandas, matplotlib, numpy, scipy, seaborn.
 4. Tu mets toujours le code dans un bloc ```python ```.
-5. Tu gères les erreurs avec try/except.
-6. Tu affiches toujours les résultats avec print().""",
+5. Tu gères les erreurs avec try/except SAUF si le Critic ou l'utilisateur te demande explicitement de ne pas le faire.
+6. Tu affiches toujours les résultats avec print().
+9. Tu ne simules JAMAIS un résultat d'exécution — tu laisses le UserProxy exécuter.""",
     llm_config=llm_config
-)
-
-user_proxy = autogen.UserProxyAgent(
-    name="UserProxy",
-    human_input_mode="NEVER",
-    max_consecutive_auto_reply=5,
-    code_execution_config=docker_config
 )
